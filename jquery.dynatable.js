@@ -83,9 +83,11 @@
       searchTarget: null,
       searchPlacement: 'before',
       searchText: 'Search: ',
+      searchClass: '',
       perPageTarget: null,
       perPagePlacement: 'before',
       perPageText: 'Show: ',
+      perPageClass: '',
       pageText: 'Pages: ',
       recordCountPageBoundTemplate: '{pageLowerBound} to {pageUpperBound} of',
       recordCountPageUnboundedTemplate: '{recordsShown} of',
@@ -1247,11 +1249,12 @@
             type: 'search',
             id: 'dynatable-query-search-' + obj.element.id,
             'data-dynatable-query': 'search',
-            value: settings.dataset.queries.search
+            value: settings.dataset.queries.search,
+            'class': settings.inputs.searchClass
           }),
           $searchSpan = $('<span></span>', {
             id: 'dynatable-search-' + obj.element.id,
-            'class': 'dynatable-search',
+            'class': 'dynatable-search' ,
             text: settings.inputs.searchText
           }).append($search);
 
@@ -1328,7 +1331,7 @@
     this.create = function() {
       var $select = $('<select>', {
             id: 'dynatable-per-page-' + obj.element.id,
-            'class': 'dynatable-per-page-select'
+            'class': 'dynatable-per-page-select ' + settings.inputs.perPageClass
           });
 
       for (var i = 0, len = settings.dataset.perPageOptions.length; i < len; i++) {
