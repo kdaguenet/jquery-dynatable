@@ -997,7 +997,7 @@
           id = $cell.data('dynatable-column'),
           column = utility.findObjectInArray(settings.table.columns, {id: id});
 
-      $link.bind('click', function(e) {
+      $link.on('click', function(e) {
         _this.toggleSort(e, $link, column);
         obj.process();
 
@@ -1198,8 +1198,8 @@
 
         $this
           .attr('data-dynatable-query', query)
-          .bind(event, queryFunction)
-          .bind('keypress', function(e) {
+          .on(event, queryFunction)
+          .on('keypress', function(e) {
             if (e.which == 13) {
               queryFunction.call(this, e);
             }
@@ -1259,10 +1259,10 @@
           }).append($search);
 
       $search
-        .bind(settings.inputs.queryEvent, function() {
+        .on(settings.inputs.queryEvent, function() {
           obj.queries.runSearch($(this).val());
         })
-        .bind('keypress', function(e) {
+        .on('keypress', function(e) {
           if (e.which == 13) {
             obj.queries.runSearch($(this).val());
             e.preventDefault();
@@ -1340,7 +1340,7 @@
         $select.append('<option value="' + number + '" ' + selected + '>' + number + '</option>');
       }
 
-      $select.bind('change', function(e) {
+      $select.on('change', function(e) {
         _this.set($(this).val());
         obj.process();
       });
