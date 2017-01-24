@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exemple de dynatable simple</title>
+    <script type="text/javascript" src="../vendor/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="../jquery.dynatable.js"></script>
+    <link rel="stylesheet" type="text/css" href="../jquery.dynatable.css" />
+</head>
+<body>
+<table id="js-esign-table" class="table table-collapse table-striped hidden">
+    <thead>
+    <tr>
+        <th class="medium-cell">Date</th>
+        <th>Fichier(s)</th>
+        <th>Collaborateur</th>
+        <th>Signataire(s)</th>
+        <th class="tiny-cell">Statut</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            23/01/2017 18:14:27
+        </td>
+        <td>
+            hahhaah                                                                                                            </td>
+        <td>Patrice ANDRE</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6363088/documents/">toto - célibataire tatat</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 18:10:35
+        </td>
+        <td>
+            Cartographie Hello                                                                                                            </td>
+        <td>Patrice ANDRE</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6363088/documents/">toto - célibataire tatat</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3717/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 17:48:35
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 17:41:41
+        </td>
+        <td>
+            test sign élect 3                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3715/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 17:39:02
+        </td>
+        <td>
+            E-Signature de documents
+        </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3714/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 17:11:38
+        </td>
+        <td>
+            test sign élect 2                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3713/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 17:09:21
+        </td>
+        <td>
+            test sign élect 1                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3712/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 14:55:49
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3711/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 11:46:59
+        </td>
+        <td>
+            test sign fisca 2                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3710/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            23/01/2017 11:39:52
+        </td>
+        <td>
+            test sign élect                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3709/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            20/01/2017 16:10:50
+        </td>
+        <td>
+            testSignature200117                                                                                                            </td>
+        <td>Clément Perez</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6062516/documents/">
+                    Clément Perez
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6162850/documents/">
+                    tata toto - célibataire
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            18/01/2017 10:00:01
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status waiting pull-right">
+                <span>Attente d'envoi à Universign</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/3610/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            20/12/2016 18:13:21
+        </td>
+        <td>
+            gfdgedsg                                                                                                            </td>
+        <td>Clément Perez</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6062516/documents/">
+                    Clément Perez
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6363088/documents/">
+                    tatat toto - célibataire
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            20/12/2016 18:11:20
+        </td>
+        <td>
+            gfdgedsg                                                                                                            </td>
+        <td>Clément Perez</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6363088/documents/">
+                    tatat toto - célibataire
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            16/12/2016 12:15:48
+        </td>
+        <td>
+            MWFIP201612160040.pdf                                                                                                            </td>
+        <td>Carlos Martins</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6729516/documents/">
+                    test KLIF
+                </a>
+                                                <span class="status canceled pull-right">
+                                                <span>Annulée</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            16/12/2016 11:22:39
+        </td>
+        <td>
+            MWFIP201612160037.pdf                                                                                                            </td>
+        <td>Carlos Martins</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6729516/documents/">
+                    test KLIF
+                </a>
+                                                <span class="status ready pull-right">
+                                                <span>Invitation à signer envoyée</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            14/12/2016 17:30:51
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Marc CAMUZAT</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6703622/documents/">
+                    Marc CAMUZAT
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6363088/documents/">
+                    tatat toto - célibataire
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            13/12/2016 12:04:03
+        </td>
+        <td>
+            MWFIP201612130019.pdf                                                                                                            </td>
+        <td>Carlos Martins</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6735924/documents/">
+                    test klif3
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6735922/documents/">
+                    test klif2
+                </a>
+                                                <span class="status canceled pull-right">
+                                                <span>Annulée</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            08/12/2016 15:10:57
+        </td>
+        <td>
+            MWFIP201612080008                                                                                                            </td>
+        <td>Carlos Martins</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6733726/documents/">
+                    Charles martin
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            01/12/2016 14:44:37
+        </td>
+        <td>
+            test                                                                                                            </td>
+        <td>Carlos Martins</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6729516/documents/">
+                    test KLIF
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            01/12/2016 11:37:05
+        </td>
+        <td>
+            MWFIP201612010001.pdf                                                                                                            </td>
+        <td>Carlos Martins</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6162850/documents/">
+                    tata toto - célibataire
+                </a>
+                                                <span class="status canceled pull-right">
+                                                <span>Annulée</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            22/11/2016 13:40:23
+        </td>
+        <td>
+            Divers                                                                                                            </td>
+        <td>Clément Perez</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6363088/documents/">toto - célibataire tatat</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status internal_error pull-right">
+                <span>Erreur interne</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/1840/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+            <button type="button" data-href="/app_dev.php/esign/1840/restart" title="Créer une nouvelle collecte" class="button but-action button-purple js-button-action ripplelink" data-name="Relancer">
+                <i class="font-icon icon-processing "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            21/11/2016 12:29:07
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Clément Perez</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6062516/documents/">
+                    Clément Perez
+                </a>
+                                                <span class="status ready pull-right">
+                                                <span>Invitation à signer envoyée</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status ready pull-right">
+                <span>Signataire(s) invité(s) à signer</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/1764/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+            <button type="button" data-href="/app_dev.php/esign/1764/checkstatus" title="Rafraîchir" class="button but-action button-action button js-button-action ripplelink" data-name="Actualiser">
+                <i class="font-icon icon-reload "></i>
+            </button>
+            <button type="button" data-href="/app_dev.php/esign/1764/relaunch" title="Relancer une nouvelle collecte" class="button but-action button-next-step js-button-action ripplelink" data-name="Relancer le mail">
+                <i class="font-icon icon-code-sent "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            10/11/2016 14:32:38
+        </td>
+        <td>
+            Contrat                                                                                                            </td>
+        <td>Aurore BOCQUAIRE</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/188938/documents/">
+                    Aurore BOCQUAIRE
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6716960/documents/">
+                    TESTE TEST
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            10/11/2016 14:21:43
+        </td>
+        <td>
+            Contrat                                                                                                            </td>
+        <td>Aurore BOCQUAIRE</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6716960/documents/">
+                    TESTE TEST
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            26/10/2016 10:38:36
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">Savic Yasmina</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status internal_error pull-right">
+                <span>Erreur interne</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/1280/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+            <button type="button" data-href="/app_dev.php/esign/1280/restart" title="Créer une nouvelle collecte" class="button but-action button-purple js-button-action ripplelink" data-name="Relancer">
+                <i class="font-icon icon-processing "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            07/10/2016 14:53:38
+        </td>
+        <td>
+            FCC test                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">
+                    Yasmina Savic
+                </a>
+                                                <span class="status canceled pull-right">
+                                                <span>Annulée</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status canceled pull-right">
+                <span>Signature annulée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            05/10/2016 17:49:12
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6185742/documents/">
+                    Yasmina Savic
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            09/09/2016 15:03:15
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Clément Perez</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6162850/documents/">toto - célibataire tata</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status internal_error pull-right">
+                <span>Erreur interne</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/610/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+            <button type="button" data-href="/app_dev.php/esign/610/restart" title="Créer une nouvelle collecte" class="button but-action button-purple js-button-action ripplelink" data-name="Relancer">
+                <i class="font-icon icon-processing "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            07/09/2016 17:58:31
+        </td>
+        <td>
+            Test signature compte faux                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6644956/documents/">Samuel Losangel</a>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status internal_error pull-right">
+                <span>Erreur interne</span>
+            </div>
+        </td>
+        <td class="text-right">
+            <button type="button" data-href="/app_dev.php/esign/532/cancel" title="Annuler la collecte" class="button button-danger but-action js-delete ripplelink" data-name="Annuler">
+                <i class="font-icon icon-cancel "></i>
+            </button>
+            <button type="button" data-href="/app_dev.php/esign/532/restart" title="Créer une nouvelle collecte" class="button but-action button-purple js-button-action ripplelink" data-name="Relancer">
+                <i class="font-icon icon-processing "></i>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            07/09/2016 17:54:35
+        </td>
+        <td>
+            Document d'entrée en relation                                                                                                            </td>
+        <td>Yasmina Savic</td>
+        <td>
+            <p>
+                <a target="_blank" href="/app_dev.php/client/6644956/documents/">
+                    Losangel Samuel
+                </a>
+                                                <span class="status signed pull-right">
+                                                <span>A signé</span>
+                                            </span>
+            </p>
+        </td>
+        <td class="col-status">
+            <div class="status completed pull-right">
+                <span>Collecte terminée</span>
+            </div>
+        </td>
+        <td class="text-right">
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+    <script type="text/javascript">
+        $.dynatableSetup({
+            inputs: {
+                multisort: ['ctrlKey', 'shiftKey', 'metaKey'],
+                paginationPrev: 'Précédent',
+                paginationNext: 'Suivant',
+                perPageText: 'Afficher : ',
+                perPageClass: 'form-control',
+                recordCountText: 'Lignes ',
+                recordCountPageBoundTemplate: '{pageLowerBound} - {pageUpperBound}',
+                recordCountPageUnboundedTemplate: '{recordsShown}',
+                recordCountTextTemplate: '{text} {pageTemplate}',
+                processingText: 'Calcul en cours ...',
+                searchText: 'Rechercher: ',
+                searchClass: 'form-control',
+                pageText: ''
+            }
+        });
+
+        $('#js-esign-table').dynatable();
+
+    </script>
+</body>
+</html>
