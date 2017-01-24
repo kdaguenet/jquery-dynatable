@@ -879,7 +879,7 @@
         window.history[pushFunction](cache, "Dynatable state", path + params + hash);
       } catch(error) {
         // Make cached records = null, so that `pop` will rerun process to retrieve records
-        cache.dynatable.dataset.originalRecords = null;
+        cache.dynatable.dataset = null;
         window.history[pushFunction](cache, "Dynatable state", path + params + hash);
       }
     };
